@@ -9,7 +9,7 @@ def createFlights(filename,airports):
         if line=="":
             break
         parts=line.split(",")
-        parts[0] = flight.flight(int(parts[1]),int(parts[2]),airports[int(parts[3])],airports[int(parts[4])],parts[5],parts[6])
+        parts[0] = flight.flight((parts[1]),(parts[2]),airports[int(parts[3])],airports[int(parts[4])],parts[5],parts[6])
         flightlist.append(parts[0])
     return(flightlist)
 

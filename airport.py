@@ -1,5 +1,5 @@
 class airport:
-    def __init__(self, flights, pv,name) -> None:
+    def __init__(self, flights, pv, name) -> None:
         self.flights = flights
         self.pv = pv
         self.name = name
@@ -8,6 +8,28 @@ class airport:
     def __str__(self) -> str:
         return(str(self.name))
     
+    def __eq__(self,other):
+
+        return(self)
+    
+    def __eq__(self,other):
+        if self.name==other.name:
+
+            return True
+        return False
+    def __ne__(self,other):
+        return(self)
+    def __lt__(self,other):
+        return(self)
+    def	__le__(self,other):
+        return(self)
+    def __gt__(self,other):
+        return(self)
+    def __ge__(self,other):
+        return(self)
+    def __hash__(self):
+        return(hash(self.name))
+
 
     def minDistance(self, dist, Visited):
         #entirely depricated, I just liked the code
